@@ -81,8 +81,8 @@
             return data.map((member) => {
                 return `
                 <li>
-            <a href="" data-email="${member.email}" data-username="${member.portfolio.github}">
-            <p data-username="${member.portfolio.github}">${member.email}</p>
+            <a class="pgm-team-member" href="" data-email="${member.email}" data-username="${member.portfolio.github}">
+            
                 <img data-username="${member.portfolio.github}" src="${member.thumbnail}">
                 <p data-username="${member.portfolio.github}" class="github">${member.portfolio.github}</p>
                 <p data-username="${member.portfolio.github}" class="name">${member.voornaam} ${member.familienaam}</p>
@@ -113,7 +113,7 @@
         updateGithubUsers(data) {
             const userList = data.items.map((user) => {
                 return `
-                <div class="users_balk" data-username="${user.login}">
+                <div class="users_box" data-username="${user.login}">
                     <img src='${user.avatar_url}'>
                     <p>${user.login}</p>
                 </div>
@@ -186,7 +186,7 @@
         updateUserFollowers(followers) {
             this.$userFollowers.innerHTML = followers.slice(0, 10).map(follower => {
                 return `
-                <li data-username="${follower.login}">
+                <li class="folower-card" data-username="${follower.login}">
                 <img src='${follower.avatar_url}'>
                 <p>${follower.login}</p>
                 </li>

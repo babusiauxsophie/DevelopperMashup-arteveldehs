@@ -16,6 +16,25 @@ nav {
     color: white;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    border-bottom: 2px solid black;
+    display: block;
+    padding: 1rem;
+    
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 0;
+}
+
 .github_logo {
     width: 4rem;
 }
@@ -42,17 +61,19 @@ nav {
 
 .pgm__team {
     border-right: 3px solid black;
-    padding: 1rem;
-    
+    width: 25%; 
 }
 
 .pgm__team img {
-    width: 15rem;
+    width: 4rem;
 }
 
 .pgm__team h2 {
     background-color: rgb(87,167,255);
-    padding: 2rem;
+    display: block;
+    margin-top: auto; 
+    padding: 1rem 0;
+    padding-left: 1rem;
 }
 
 .container {
@@ -66,6 +87,7 @@ nav {
 
 .github_users{
     border-left: 3px solid black;
+    width: 25%;
 }
 
 .info-container {
@@ -74,4 +96,61 @@ nav {
 
 .container {
     margin: 0 auto;
+}
+
+.users_balk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.users_balk img {
+    object-fit: cover;
+    width: 100%;
+    height: 30rem;
+}
+
+.rep-title{
+    background-color: rgb(87,167,255);
+    width: fit-content;
+    padding: 1rem;
+}
+
+.fol-title{
+    background-color: rgb(87,167,255);
+    width: fit-content;
+    padding: 1rem;
+}
+
+.folower-card{
+    display: flex;
+    align-items: center;
+}
+
+.folower-card img{
+    width: 4rem;
+    padding: 1rem;
+}
+
+.users_box{
+    display: flex;
+    align-items: center;
+}
+
+.users_box img{
+    width: 4rem;
+    padding: 1rem;
+}
+
+.github_users_title{
+    background-color: rgb(87,167,255);
+    display: block;
+    margin-top: auto; 
+    padding: 1rem 0;
+    padding-left: 1rem;
+}
+
+input {
+    padding: 1rem;
+    font-size: 1rem;
 }
