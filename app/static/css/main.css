@@ -1,0 +1,77 @@
+body {
+    background: rgb(13,16,23);
+    color: white;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(22,27,33);
+    color: white;
+}
+
+.github_logo {
+    width: 4rem;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.weather-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.weather-item p {
+    font-size: 1.5rem;
+}
+
+.dogs-item {
+    font-size: 1.5rem;
+    padding-right: 1rem;
+}
+
+.pgm__team {
+    border-right: 3px solid black;
+    padding: 1rem;
+    
+}
+
+.pgm__team img {
+    width: 15rem;
+}
+
+.pgm__team h2 {
+    background-color: rgb(87,167,255);
+    padding: 2rem;
+}
+
+.container {
+    display: flex;
+}
+
+.rep-title {
+    font-weight: bold;
+    
+}
+
+.github_users{
+    border-left: 3px solid black;
+}
+
+.info-container {
+    width: 50%;
+}
+
+.container {
+    margin: 0 auto;
+}

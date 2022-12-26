@@ -1,0 +1,93 @@
+[
+    {
+        "voornaam": "Sophie",
+        "familienaam": "Babusiaux",
+        "email": "babusiaux.sophie@gmail.com",
+        "thumbnail": "https://avatars.githubusercontent.com/u/55799015?s=400&u=c4d7a1525fec272f5e3a5adedf48ee1f55b726df&v=4",
+        "lijfspreuk": "If life gives you lemons, squeeze it in your enemy's eyes",
+        "portfolio": 
+            {
+                "github": "babusiauxsophie",
+                "linkedIn": "Babusiaux Sophie"
+            },
+        "student": true,
+        "geboortedatum": 664272000
+    },
+    
+    {
+        "voornaam": "Philippe",
+        "familienaam": "De Pauw - Waterchoot",
+        "email": "philippe.depauw@arteveldehs.be",
+        "thumbnail": "https://avatars.githubusercontent.com/u/390219?v=4",
+        "lijfspreuk": "Let your ideas soar with wings",
+        "portfolio": 
+        {
+            "github": "Drdynscript",
+            "linkedIn": "Philippe De Pauw - Waterschoot"
+        },
+        "student": false,
+        "geboortedatum": 504835200
+    },
+    
+    {
+        "voornaam": "Michael",
+        "familienaam": "Vanderpoorten",
+        "email": "michael.vanderpoorten@arteveldehs.be",
+        "thumbnail": "https://avatars.githubusercontent.com/u/1913804?v=4",
+        "lijfspreuk": "Dream, create, inspire",
+        "portfolio": 
+        {
+            "github": "yungpanda",
+            "linkedIn": "Michael Vanderpoorten"
+        },
+        "student": false,
+        "geboortedatum": 706579200
+    },
+
+    {
+        "voornaam": "Mathieu",
+        "familienaam": "Spillebeen",
+        "email": "spillebeen@gmail.com",
+        "thumbnail": "https://avatars.githubusercontent.com/u/2550222?v=4",
+        "lijfspreuk": "Java is to JavaScript what car is to Carpet.",
+        "portfolio": 
+        {
+            "github": "mathieuspil",
+            "linkedIn": "mathieuspil"
+        },
+        "student": false,
+        "geboortedatum": 680918400
+    },
+
+    {
+        "voornaam": "Jonas",
+        "familienaam": "De Groote",
+        "email": "degrjona@student.arteveldehs.be",
+        "thumbnail": "https://avatars.githubusercontent.com/u/2550222?v=4",
+        "lijfspreuk": "Bij ons stierft er nog niemand van den dust",
+        "portfolio": 
+        {
+            "github": "jonasdegroote1",
+            "linkedIn": "jonas de groote"
+        },
+        "student": true,
+        "geboortedatum": 966556800
+    },
+
+    {
+        "voornaam": "Dario",
+        "familienaam": "Melkebeke",
+        "email": "melkebekedario@gmail.com",
+        "thumbnail": "https://avatars.githubusercontent.com/u/2550222?v=4",
+        "lijfspreuk": "Dont underestimate your value",
+        "portfolio": 
+        {
+            "github": "B0ENK",
+            "linkedIn": "Dario Melkebeke"
+        },
+        "student": true,
+        "geboortedatum": 1028055600
+    }
+]
+
+
