@@ -1,6 +1,3 @@
-
-
-
 (() => {
     const app = {
         initialize() {
@@ -59,11 +56,9 @@
             }))
             return `
             <p>anti-hondenpoeptegels: ${filteredData.length}</p>
-            
             `
         },
         async getPGMTeam() {
-            
             try {
                 const response = await fetch("static/data/pgm.json", {});
                 console.log(response);
@@ -81,19 +76,17 @@
             return data.map((member) => {
                 return `
                 <li>
-            <a class="pgm-team-member" href="" data-email="${member.email}" data-username="${member.portfolio.github}">
-            
+                <a class="pgm-team-member" href="" data-email="${member.email}" data-username="${member.portfolio.github}">
                 <img data-username="${member.portfolio.github}" src="${member.thumbnail}">
                 <p data-username="${member.portfolio.github}" class="github">${member.portfolio.github}</p>
                 <p data-username="${member.portfolio.github}" class="name">${member.voornaam} ${member.familienaam}</p>
-            </a>
-            </li>
+                </a>
+                </li>
                 `
             }).join('');
         },
         searchOnClick() {
             this.$submitbtn.addEventListener('click',(event) => {
-                console.log(this.$searchbar.value);
                 this.getGithubUsers(this.$searchbar.value);
             }) 
         },
@@ -102,9 +95,7 @@
                 const response = await fetch(`https://api.github.com/search/users?sort=desc&page=1&per_page=100&q=${value}`, {});
                 if (response.status === 200) {
                     const data = await response.json();
-                    console.log(data);
                     this.updateGithubUsers(data);
-                
                 }
             } catch (error) {
                 console.log(`Catch: ${error}`);
@@ -113,18 +104,17 @@
         updateGithubUsers(data) {
             const userList = data.items.map((user) => {
                 return `
-                <div class="users_box" data-username="${user.login}">
+                    <div class="users_box" data-username="${user.login}">
                     <img src='${user.avatar_url}'>
                     <p>${user.login}</p>
-                </div>
-            `
+                    </div>
+                    `
             }).join('');
             this.$usercontainer.innerHTML = userList;
         },
         detailsOnClick() {
             document.addEventListener('click', (event) => {
                 event.preventDefault();
-                console.log(event.target)
                 this.getSpecificUser(event.target.parentNode.dataset.username);
             })
         },
@@ -143,12 +133,12 @@
         },
         updateUserDetails(user) {
             this.$userbox.innerHTML =
-            `
-            <div class="users_balk" data-username="${user.login}">
+                `
+                <div class="users_balk" data-username="${user.login}">
                 <img src='${user.avatar_url}'>
                 <p>${user.login}</p>
-            </div>
-            `;
+                </div>
+                `;
         },
         async getRepositories(username) {
             try {
@@ -176,7 +166,6 @@
                 const response = await fetch(`https://api.github.com/users/${username}/followers?page=1&per_page=100`, {});
                 if(response.status === 200) {
                     const data = await response.json();
-                    console.log(data);
                     this.updateUserFollowers(data);
                 }
             } catch (error) {
